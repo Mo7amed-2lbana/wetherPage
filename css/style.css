@@ -1,0 +1,126 @@
+:root{
+    --main-color:#009ad8;
+}
+
+
+body {
+    background-color: #1e202b;
+    color: #bfc1c8;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    /* height: 2000px; */
+}
+
+
+/* start header  */
+header nav .text-logo h4{
+    font-size: 14px;
+}
+
+header nav .logo img{
+    width: 70px;
+}
+header nav .text-logo small{
+    color:  #bfc1c8;
+    font-size: 10px;
+}
+
+header nav .links li a{
+    transition: all .3s;
+    border: 2px solid transparent;
+    border-radius: 40px;
+}
+
+header nav .links li a.active ,
+header nav .links li a:hover{
+    border: 2px solid var(--main-color);
+    color: var(--main-color)!important;
+}
+
+
+.content{
+    transform: translateY(-130px)
+}
+.inbut-search {
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+input{
+    background-color: #1E202B!important;
+    border: none!important;
+    outline: none!important;
+    color: #fff!important;
+    
+}
+input.sub{
+    background-color: var(--main-color)!important;
+    right: 15px;
+    top: 4px;
+    padding: 13px 40px;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+::placeholder{
+    padding: 0 10px;
+}
+/* end header  */
+
+/* start weather-content */
+
+.weather-content .content-header{
+    background-color: #2D303D;
+    border-top-right-radius: 10px;   
+    border-top-left-radius: 10px;   
+}
+
+.weather-content .content-desc{
+    background-color: #323544;
+    
+}
+.weather-content .mid .content-desc {
+    background-color: #262936;
+}
+.weather-content .mid .content-header{
+    background-color: #222530;
+}
+.weather-content .content-desc p{
+    font-size: 18px;
+}
+
+.weather-content .content-desc .weather-degree h2{
+    color: #fff;
+    font-size:100px ;
+}
+
+.weather-content .content-desc .weather-degree img{
+    width: 30%;
+}
+.weather-content .content-desc .weather-degree img.img-small{
+    width: 15%;
+}
+
+.weather-content .content-desc small{
+    color: var(--main-color);
+    font-size: 14px;
+}
+/* end weather-content */
+
+/* start footer  */
+footer{
+    background-color: #262936;
+}
+
+footer .icons svg{
+    color: var(--main-color);
+    transition: .4s;
+    cursor: pointer;
+}
+
+footer .icons svg:hover{
+    background-color: #009ad8!important;
+    color: #fff!important;
+}
+/* end footer  */

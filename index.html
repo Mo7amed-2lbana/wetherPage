@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wethers page</title>
+    <!-- font awosome  -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap file  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"/>
+    <!-- my file  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- start header  -->
+    <header>
+      <nav class="w-75 mx-auto">
+        <div
+          class="container py-5 "
+        >
+        <div class="row gy-5 flex-column flex-md-row justify-content-between align-items-center">
+          <div class="col-md-3">
+            <div class="logo d-flex align-items-center">
+              <img src="images/logo@2x.png" alt="logo" class="img-fluid" />
+              <div class="text-logo text-white ms-3">
+                <h4 class="mb-0 fw-bold fs-6">Weather</h4>
+                <small class="">tagline goes here</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 d-flex justify-content-end flex-wrap">
+            <ul class="links list-unstyled d-flex">
+              <li>
+                <a href="#" class="active text-white me-4 px-4 py-2 text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-white me-4 px-3 py-2 text-decoration-none">News</a>
+              </li>
+              <li>
+                <a href="#" class="text-white me-4 px-3 py-2 text-decoration-none"
+                  >Live Camearas</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white me-4 px-3 py-2 text-decoration-none"
+                  >Photes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white px-3 py-2 text-decoration-none">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        </div>
+      </nav>
+    </header>
+        <!-- end header  -->
+        <div class="inbut-search pt-5 ">
+          <div class="w-75 mx-auto container">
+            <div class="row">
+              <div class="form-group position-relative mb-5 mt-5">
+                <input id="inptSearch" type="text" placeholder="Find Your Location" class="form-control rounded-pill py-3 ">
+                <input type="submit" value="Find" class="position-absolute rounded-pill sub">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+      <div class="w-75 mx-auto weather-content ">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 px-0 ">
+              <div class="content-header px-2 d-flex justify-content-between py-4">
+                  <p id="dayOne" class="mb-0"></p>
+                  <p id="dayMounth" class="mb-0"></p>
+  
+              </div>
+              <div class="content-desc px-3 pb-4">
+                <p id="city" class="pt-3 mx-3">Cairo</p>
+                <div class="weather-degree px-2 py-1 d-flex justify-content-between align-items-center">
+                  <h2 id="temp" class="fw-bold me-5"></h2>
+                  <img id="img-cloud" src="" alt="">
+                </div>
+                <small id="status" class="d-block mb-3"></small>
+                <div class="icons">
+                  <div class="row gy-3">
+                    <div class="col-4 col-md-3">
+                      <div class="item d-flex align-items-center">
+                        <img src="images/icon-umberella.png" alt="icon" class="img-fluid me-1">
+                        <small class="text-white-50">20%</small>
+                      </div>
+                    </div>
+                    <div class="col-4 col-md-3">
+                      <div class="item d-flex align-items-center">
+                        <img src="images/icon-wind.png" alt="icon" class="img-fluid me-1">
+                        <small class="text-white-50">18km/h</small>
+                      </div>
+                    </div>
+                    <div class="col-4 col-md-3">
+                      <div class="item d-flex align-items-center">
+                        <img src="images/icon-compass.png" alt="icon" class="img-fluid me-1">
+                        <small class="text-white-50">East</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 px-0 mid">
+              <div class="content-header px-2 py-3">
+                  <p id="dayTwo" class="mb-0 text-center"></p>
+              </div>
+              <div class="content-desc px-3 pb-4">
+                <div class="weather-degree px-2 py-4">
+                  <img id="imgDayTwo" src="" alt="" class="d-block mx-auto img-small pt-5 pb-4">
+                  <h2 id="tempDayTwoMax" class="fw-bold text-center fs-5"></h2>
+                  <small id="tempDayTwoMin" class="text-center d-block text-white-50"></small>
+                </div>
+                <small id="statusDayTwo" class="d-block mb-4 text-center"></small>
+              </div>
+            </div>      
+            <div class="col-md-4 px-0">
+              <div class="content-header px-2 py-3">
+                  <p id="dayThree" class="mb-0 text-center"></p>
+              </div>
+              <div class="content-desc px-3 pb-4">
+                <div class="weather-degree px-2 py-4">
+                  <img id="imgDayThree" src="images/113.webp" alt="" class="d-block mx-auto img-small pt-5 pb-4">
+                  <h2 id="tempDayThreeMax"  class="fw-bold text-center fs-5"></h2>
+                  <small id="tempDayThreeMin" class="text-center d-block text-white-50"></small>
+                </div>
+                <small id="statusDayThree" class="d-block mb-4 text-center"></small>
+              </div>
+            </div>                                       
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- start footer  -->
+    <footer class="mt-1 py-5">
+     <div class="container w-75 mx-auto">
+        <div class="row align-items-center justify-content-center justify-content-md-between">
+          <div class="col-md-8">
+            <div class="form-group position-relative mb-5 mt-5">
+              <input type="text" placeholder="Enter Your email to subscribe..." class="form-control rounded-pill py-3 ">
+              <input type="submit" value="subscribe" class="position-absolute rounded-pill sub">
+            </div>
+          </div>
+          <div class="offset-md-1 col-md-3 d-flex justify-content-center justify-content-md-between">
+            <div class="icons">
+              <i class="fa-brands rounded-circle fa-facebook-f fa-xl p-3 bg-dark text-center"></i>
+              <i class="fa-brands rounded-circle fa-twitter fa-xl p-3 bg-dark"></i>
+              <i class="fa-brands rounded-circle fa-google fa-xl p-3 bg-dark"></i>
+              <i class="fa-brands rounded-circle fa-pinterest fa-xl p-3 bg-dark"></i>
+            </div>
+          </div>
+        </div>
+        <p class="mb-0 mt-3 text-center text-md-start">Copyright 2023 Company name. Designed by Mohamed Elbana. All rights reserved</p>
+    </footer>
+    
+    <!-- end footer  -->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
